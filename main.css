@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root{
+    --primary-color: #fd6711;
+    --secondary-color: #13c5d0;
+    --color-three:#fdf4ed;
+    --color-four:#fd6711c2;
+    --color-five:#13c5d0c2;
+    --color-six:#ff9f00c2;
+    --primary-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+    --secondary-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+}
+
+.text-primary{
+    color: var(--primary-color);
+}
+
+.text-primary-hover:hover{
+    color: var(--primary-color);
+}
+
+.text-secondary{
+    color: var(--secondary-color);
+}
+
+.bg-primary{
+    background-color: var(--primary-color);
+}
+
+.bg-secondary{
+    background-color: var(--secondary-color);
+}
+
+.bg-three{
+    background-color: var(--color-three);
+}
+
+.bg-four{
+    background-color: var(--color-four);
+}
+
+.bg-five{
+    background-color: var(--color-five);
+}
+
+.bg-six{
+    background-color: var(--color-six);
+}
+
+.shadow-primary{
+    box-shadow: var(--primary-shadow);
+}
+
+.shadow-secondary{
+    box-shadow: var(--secondary-shadow);
+}
+
+.shadow-secondary-hover:hover{
+    box-shadow: var(--secondary-shadow);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* home page css */
+.home-donate-btn::after{
+    position: absolute;
+    content: "";
+    background-color: var(--primary-color);
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 25%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform:translateY(100%);
+    transition: transform 500ms ease-in-out;
+}
+
+.home-donate-btn:hover::after{
+    transform: translateY(0);
+}
+
+.donation-progress{
+    width: 0;
+    transition: width .5s ease;
+}
+
+.progress-bar-box{
+    left: 0;
+    transition: left .5s ease;
+}
+
+.home-proj-card:hover img, .home-proj-img:hover img{
+    transform: scale(1.05);
+}
+
+.home-proj-card:hover .home-proj-img-overlay, .home-proj-img:hover .home-proj-img-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    animation: overlayPulse 1s ease-in-out forwards;
+}
+
+@keyframes overlayPulse {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.home-team-card:hover img, .home-team-img:hover img{
+    transform: scale(1.05);
+}
+
+.home-team-card:hover .home-team-img-overlay, .home-team-img:hover .home-team-img-overlay{
+    background-color: var(--primary-color);
+    opacity: 0.4;
+}
+
+/* .home-team-card:hover .home-team-img::before, .home-team-img:hover::before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    opacity: 0.4;
+} */
+
+
+/* about page css */
+.about-donate-btn::after{
+    position: absolute;
+    content: "";
+    background-color: black;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform:translateY(100%);
+    transition: transform 500ms ease-in-out;
+}
+
+.about-donate-btn:hover::after{
+    transform: translateY(0);
+}
+
+/* contact-page-css */
+
+.contact-form .contact-message-btn::after{
+    position: absolute;
+    content: "";
+    background-color: black;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 25%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform:translateY(100%);
+    transition: transform 500ms ease-in-out;
+}
+
+.contact-form .contact-message-btn:hover::after{
+    transform: translateY(0);
+}
+

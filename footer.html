@@ -1,0 +1,65 @@
+<div class="flex flex-1 flex-col items-start gap-8">
+    <div>
+        <img src="/media/winaid-white-logo.png" alt="website logo and name" class="w-full h-[40px]">
+    </div>
+    <p class="text-white/60 text-left">Welcome to our Aelpa nonprofit. Lore ipsum simply text amet cing elit ext amet cing ipsum</p>
+    <div class="footer-donate-btn relative overflow-hidden rounded-full bg-[#13c5d0] px-6 py-2">
+        <a href="/pages/about.html" class="z-10"><button class="text-xl relative z-[1] text-white">Read more</button></a>
+    </div>
+</div>
+<div class="flex flex-1 flex-col items-start gap-8">
+    <h1 class="text-white uppercase tracking-wide text-xl font-medium">NewsLetter</h1>
+    <p class="text-white/60 text-left">Subscribe our newsletter to get the latest news & updates.</p>
+    <div class="bg-white p-4 rounded-lg">
+        <label for="user_email">
+            <input name="user_email" type="email" id="user_email" placeholder="Enter your email" class="placeholder:text-black outline-none">
+        </label>
+    </div>
+</div>
+<div class="flex flex-1 flex-col items-start gap-8">
+    <h1 class="text-white uppercase tracking-wide text-xl font-medium">Useful&nbsp;links</h1>
+    <ul class="flex flex-col justify-around items-start gap-5 text-lg font-medium text-white/60">
+        <li ><a href="/index.html" class="hover:text-white">Home</a></li>
+        <li ><a href="/pages/about.html" class="hover:text-white">About</a></li>
+        <li ><a href="/pages/campaigns.html" class="hover:text-white">Campaigns</a></li>
+        <li ><a href="/pages/contact.html" class="hover:text-white">Contact</a></li>
+    </ul>
+</div>
+<div class="flex flex-1 flex-col items-start gap-8">
+    <h1 class="text-white uppercase tracking-wide text-xl font-medium">Address</h1>
+    <div class="flex gap-2 items-start">
+        <i class="fa-solid fa-location-dot text-2xl text-white"></i>
+        <span class="text-white/60 text-left p-0 m-0">90 10h Street, Office 478 Road 5 Berlin, CA 700156</span>
+    </div>
+    <div class="flex gap-2 items-start">
+        <i class="fa-solid fa-envelope-open text-2xl text-white"></i>
+        <span class="text-white/60 text-left p-0 m-0">infogamil@gmail.com</span>
+    </div>
+    <div class="flex gap-2 items-start">
+        <i class="fa-solid fa-phone text-2xl text-[#fd6711]"></i>
+        <span class="text-[#fd6711] text-left p-0 m-0">111-222-3333</span>
+    </div>
+</div>
+
+<style>
+    .footer-donate-btn::after{
+    position: absolute;
+    content: "";
+    background-color: #fd6711;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 25%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform:translateY(100%);
+    transition: transform 500ms ease-in-out;
+    }
+
+    .footer-donate-btn:hover::after{
+        transform: translateY(0);
+    }
+</style>

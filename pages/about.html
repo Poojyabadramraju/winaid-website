@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/main.js"></script>
+</head>
+<body class="font-['Kumbh Sans']">
+    <nav class="navbar sticky z-[1000] top-0 flex justify-between items-center gap-5 p-6 min-h-[15vh] bg-white border-b-[1px] border-b-black/20 shadow-lg"></nav>
+
+    <div class="flex flex-col mb-10 gap-8">
+        <div class="h-[90vh] flex relative">
+            <img src="/media/banner.jpg" alt="wildlife banner image" class="w-full object-cover object-center">
+            <div class="flex flex-col absolute justify-center items-center gap-4 w-full h-full text-center text-white bg-black/30">
+                <h1 class="lg:text-[60px] text-2xl md:text-4xl font-extrabold tracking-wide">About</h1>
+                <div class="text-white text-2xl">
+                    Home /
+                    <span class="text-primary">
+                        About
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex max-md:flex-col justify-between items-start gap-8 px-6 mt-10 md:px-12">
+            <div class="flex-1">
+                <img src="/media/wildlifeimg.jpg" alt="wildlife image" class="w-full h-[550px] rounded-3xl">
+            </div>
+
+            <div class="flex-1 flex flex-col text-left gap-4">
+                <h2 class="uppercase font-semibold text-primary">
+                    About WINAID 
+                </h2>
+                <p class="text-2xl tracking-wide font-bold">Safeguarding Wildlife and Ecosystems for Future Generations</p>
+                <p class="text-lg">
+                    WINAID is where our passion for wildlife fuels our dedication to conservation. Founded with a deep love for nature and a commitment to safeguarding its wonders, WINAID is on a mission to protect and preserve the world's most vulnerable species and habitats.
+                </p>
+                <p class="text-lg">
+                    Our journey began with a realization: safeguarding wildlife is not just about saving individual species, but about securing the health of entire ecosystems and the communities that depend on them.
+                </p>
+                <p class="text-lg">
+                    We believe that every creature has a right to thrive in its natural environment. Inspired by this belief, we work tirelessly to address the pressing challenges facing wildlife today, from habitat loss and climate change to poaching and human-wildlife conflict.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex max-md:flex-col flex-row-reverse justify-between items-center gap-8 px-6 mt-10 md:px-12">
+            <div class="flex-1">
+                <img src="/media/save-wildlife.png" alt="wildlife image" class="w-full h-[500px] rounded-3xl">
+            </div>
+
+            <div class="flex-1 flex flex-col text-left gap-4">
+                <h2 class="uppercase font-semibold text-primary">
+                    Our conservation vision
+                </h2>
+                <p class="text-2xl tracking-wide font-bold">Fostering Harmony and Sustainable Future</p>
+                <p class="text-lg">
+                    Hence, our approach to conservation is holistic and inclusive, guided by science, compassion, and a deep respect for all forms of life. Through strategic partnerships, community engagement, and innovative conservation initiatives, we strive to make a meaningful and lasting impact on the planet.
+                </p>
+                <p class="text-lg">
+                    From the lush rainforests of the Amazon to the vast savannahs of Africa, WINAID is committed to protecting biodiversity wherever it may be found.
+                </p>
+                <p class="text-lg">
+                    Join us in our mission to ensure a future where wildlife and humans can thrive in harmony with nature. 
+                </p>
+                <p class="text-lg">
+                    Together, we're not just saving animals; we're building a more sustainable and harmonious future for all beings on this planet.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center items-center w-full py-14 bg-black/40 bg-[url('/media/aboutbanner.jpg')] relative bg-blend-overlay bg-fixed bg-cover bg-no-repeat mb-10">
+        <div class="flex flex-col justify-center items-center text-center w-full gap-5 px-5">
+            <h2 class="uppercase font-semibold text-lg tracking-wide text-primary">
+                Our Mission
+            </h2>
+            <p class="text-lg text-white">
+                Our mission is to provide comprehensive information, educational resources, and engaging content that inspires a sense of responsibility and stewardship for preserving endangered species and their habitats.
+            </p>
+            <p class="text-lg text-white">
+                Through our platform, we aim to unite people from diverse backgrounds and perspectives to work together towards a future where humans and wildlife coexist in harmony, ensuring our planet's long-term health and prosperity.
+            </p>
+            <div class="about-donate-btn relative overflow-hidden bg-primary px-6 py-2 shadow-[4px_4px_8px_3px] shadow-white/20">
+                <a href="/pages/donate.html" class="z-10"><button class="text-xl relative z-[1] text-white">Donate</button></a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto flex flex-wrap bg-black justify-between items-start content-start px-6 pt-16 pb-32 gap-10">
+    </footer>
+</body>
+</html>

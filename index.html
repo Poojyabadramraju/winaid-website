@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/main.js"></script>
+    <script defer src="/js/homescript.js"></script>
+</head>
+<body class="font-['Kumbh Sans']">
+    <nav class="navbar sticky top-0 z-[1000] flex justify-between items-center gap-5 p-6 min-h-[15vh] bg-white border-b-[1px] border-b-black/20 shadow-lg">
+    </nav>
+
+    <div class="flex flex-col mb-10 gap-8">
+        <div class="h-[90vh] flex max-md:flex-col-reverse justify-between items-center gap-8 w-full p-14 bg-[url('/media/homebannerbg.png')] bg-cover bg-center bg-no-repeat mb-10">
+            <div class="flex-1 flex opacity-90">
+                <img src="/media/homebannerimg.png" alt="wildlife banner" class="w-full">
+            </div>
+            <div class="flex-1 flex flex-col justify-center items-start text-left w-full gap-5 px-5">
+                <h2 class="uppercase font-semibold text-lg tracking-wide text-primary">
+                    Saving the planet, one species at a time
+                </h2>
+                <p class="text-[45px] font-bold text-white">
+                    Let’s make a difference and save all of the planet’s creatures. 
+                </p>
+                <div class="home-donate-btn relative overflow-hidden rounded-full bg-secondary px-6 py-2">
+                    <a href="/pages/donate.html" class="z-10"><button class="text-xl relative z-[1] text-white">Donate</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex max-md:flex-col justify-between items-center gap-8 px-6 md:px-12">
+            <div class="flex-1">
+                <img src="/media/wildlifeimg2.jpg" alt="wildlife image" class="w-full h-[300px] rounded-3xl">
+            </div>
+
+            <div class="flex-1 flex flex-col text-left gap-4">
+                <h2 class="uppercase font-semibold text-primary">
+                    About WINAID
+                </h2>
+                <p class="text-4xl tracking-wide font-bold">
+                    Their voices will be heard
+                </p>
+                <p class="text-lg">
+                    In the wilderness, every heartbeat carries a reminder of our responsibility: to safeguard, protect, and ensure the continuity of the world’s harmonies.
+                </p>
+                <div class="self-start home-donate-btn relative overflow-hidden rounded-full bg-secondary px-6 py-2">
+                    <a href="/pages/about.html" class="z-10"><button class="text-xl relative z-[1] text-white">About us</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col bg-three px-6 md:px-12 py-14 gap-10 mt-5">
+            <h2 class="text-center uppercase font-semibold text-primary"> On Going Projects</h2>
+            <div class="flex flex-wrap justify-center items-center content-center lg:gap-8 gap-6">
+                <div class="home-proj-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="home-proj-img relative flex-1 overflow-hidden">
+                        <img src="/media/projectscardimg1.jpg" alt="wildlife project card image" class="z-0 aspect-square transition-transform duration-[300ms] ease-in-out w-full rounded-t-lg ">
+                        <div class="home-proj-img-overlay z-[1] absolute w-0 h-0 top-[50%] left-[50%] opacity-0 transition-all duration-[300ms] ease-in-out"></div>
+                    </div>
+                    <div class="flex-1 flex flex-col text-left px-6 py-8 gap-5">
+                        <h3 class="text-left text-xl font-semibold text-primary-hover">Wildlife Awareness Campaign</h3>
+                        <div class="text-base round-lg bg-three px-4 py-6">
+                            <p class="mb-5">
+                                <span class="font-semibold">$1200.00</span>
+                                donated of
+                                <span class="font-semibold">$4000.00</span>
+                                goal
+                            </p>
+                            <div class="bg-white w-full p-2">
+                               <div class="bg-white relative rounded-[50px] w-full h-[5px]">
+                                    <div data-width="80" class="donation-progress absolute bg-primary top-0 left-0 bottom-0 h-[5px] rounded-[50px]">
+                                    </div>
+                                    <div class="progress-bar-box absolute bg-black w-[30px] h-[20px] top-[-7px] bottom-0 text-center text-white text-[12px]">
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-proj-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="home-proj-img relative flex-1 overflow-hidden">
+                        <img src="/media/projectscardimg2.jpg" alt="wildlife project card image" class="z-0 aspect-square transition-transform duration-[300ms] ease-in-out w-full rounded-t-lg ">
+                        <div class="home-proj-img-overlay z-[1] absolute w-0 h-0 top-[50%] left-[50%] opacity-0 transition-all duration-[300ms] ease-in-out"></div>
+                    </div>
+                    <div class="flex-1 flex flex-col text-left px-6 py-8 gap-5">
+                        <h3 class="text-left text-xl font-semibold text-primary-hover">Marine Conservation Efforts</h3>
+                        <div class="text-base round-lg bg-[#fdf4ed] px-4 py-6">
+                            <p class="mb-5">
+                                <span class="font-semibold">$1200.00</span>
+                                donated of
+                                <span class="font-semibold">$4000.00</span>
+                                goal
+                            </p>
+                            <div class="bg-white relative w-full p-2">
+                               <div class="bg-white relative rounded-[50px] w-full h-[5px]">
+                                    <div data-width="60" class="donation-progress absolute bg-primary top-0 left-0 bottom-0 h-[5px] rounded-[50px]">
+                                    </div>
+                                    <div class="progress-bar-box absolute bg-black w-[30px] h-[20px] top-[-7px] bottom-0 text-center text-white text-[12px]">
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-proj-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="home-proj-img relative flex-1 overflow-hidden">
+                        <img src="/media/projectscardimg3.jpg" alt="wildlife project card image" class="z-0 aspect-square transition-transform duration-[300ms] ease-in-out w-full rounded-t-lg ">
+                        <div class="home-proj-img-overlay z-[1] absolute w-0 h-0 top-[50%] left-[50%] opacity-0 transition-all duration-[300ms] ease-in-out"></div>
+                    </div>
+                    <div class="flex-1 flex flex-col text-left px-6 py-8 gap-5">
+                        <h3 class="text-left text-xl font-semibold text-primary-hover">Forest Restoration Project</h3>
+                        <div class="text-base round-lg bg-[#fdf4ed] px-4 py-6">
+                            <p class="mb-5">
+                                <span class="font-semibold">$1200.00</span>
+                                donated of
+                                <span class="font-semibold">$4000.00</span>
+                                goal
+                            </p>
+                            <div class="bg-white relative w-full p-2">
+                               <div class="bg-white relative rounded-[50px] w-full h-[5px]">
+                                    <div data-width="90" class="donation-progress absolute bg-primary top-0 left-0 bottom-0 h-[5px] rounded-[50px]">
+                                    </div>
+                                    <div class="progress-bar-box absolute bg-black w-[30px] h-[20px] top-[-7px] bottom-0 text-center text-white text-[12px]">
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex max-md:flex-col flex-row-reverse justify-between items-center gap-8 px-6 mt-10 md:px-12">
+            <div class="flex-1">
+                <img src="/media/wildlifeimg.jpg" alt="wildlife image" class="w-full h-[450px] rounded-3xl">
+            </div>
+
+            <div class="flex-1 flex flex-col text-left gap-4">
+                <h2 class="uppercase font-semibold text-primary">
+                    Our Mission
+                </h2>
+                <p class="text-lg">
+                    Our mission is to provide comprehensive information, educational resources, and engaging content that inspires a sense of responsibility and stewardship for preserving endangered species and their habitats.
+                </p>
+                <p class="text-lg">
+                    Through our platform, we aim to unite people from diverse backgrounds and perspectives to work together towards a future where humans and wildlife coexist in harmony, ensuring our planet's long-term health and prosperity.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col px-6 md:px-12 py-14 gap-10 mt-5">
+            <h2 class="text-center text-4xl font-semibold">Find out more & Get Involved</h2>
+            <div class="flex flex-wrap justify-center items-center content-center lg:gap-8 gap-6">
+                <div class="relative flex justify-center items-center overflow-hidden min-w-[150px] w-[350px] shadow-primary rounded-lg">
+                    <div>
+                        <img src="/media/lion.jpg" alt="wildlife project card image" class="aspect-[4/5] w-full rounded-t-lg ">
+                    </div>
+                    <div class="absolute flex flex-col gap-6 justify-end items-center bg-four w-full h-full p-8 pb-16">
+                        <i class="fa-solid fa-circle-dollar-to-slot text-5xl text-white"></i>
+                        <h2 class="text-center text-3xl font-semibold text-white">Donate Now</h2>
+                    </div>
+                </div>
+
+                <div class="relative flex justify-center items-center overflow-hidden min-w-[150px] w-[350px] shadow-primary rounded-lg">
+                    <div>
+                        <img src="/media/giraffe.jpg" alt="wildlife project card image" class="aspect-[4/5] w-full rounded-t-lg ">
+                    </div>
+                    <div class="absolute flex flex-col gap-6 justify-end items-center bg-five w-full h-full p-8 pb-16">
+                        <i class="fa-solid fa-hand-holding-heart text-5xl text-white"></i>
+                        <h2 class="text-center text-3xl font-semibold text-white">Monthly Donate</h2>
+                    </div>
+                </div>
+
+                <div class="relative flex justify-center items-center overflow-hidden min-w-[150px] w-[350px] shadow-primary rounded-lg">
+                    <div>
+                        <img src="/media/elephant.jpg" alt="wildlife project card image" class="aspect-[4/5] w-full rounded-t-lg ">
+                    </div>
+                    <div class="absolute flex flex-col gap-6 justify-end items-center bg-six w-full h-full p-8 pb-16">
+                        <i class="fa-solid fa-arrow-trend-up text-5xl text-white"></i>
+                        <h2 class="text-center text-3xl font-semibold text-white">Trending Projects</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col bg-[#f9f2ed] px-6 md:px-12 py-14 gap-10 mt-5">
+            <h2 class="text-center uppercase font-semibold text-primary">Our Team</h2>
+            <p class="text-center text-4xl font-semibold">About Senior Leadership</p>
+
+            <div class="flex flex-wrap justify-center items-center content-center lg:gap-8 gap-6">
+                <div class="home-team-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="flex-1 home-team-img relative overflow-hidden">
+                        <img src="/media/team-1.jpg" alt="team 1 card image" class="z-0 transition-transform duration-[300ms] ease-in-out w-full rounded-t-lg ">
+                        <div class="home-team-img-overlay z-[1] absolute w-full h-full top-0 left-0 opacity-0"></div>
+                    </div>
+                    <div class="flex-1 flex flex-col text-left px-6 py-8 gap-4">
+                        <h3 class="text-left text-xl font-semibold text-primary-hover">Asif Wadia</h3>
+                        <p>President and Director</p>
+                        <div class="flex items-center gap-5">
+                            <i class="fa-brands fa-facebook-f aspect-square rounded-full border-[1px] border-black px-[8px] py-[6px] hover:text-white hover:bg-black"></i>
+                            <i class="fa-brands fa-linkedin-in rounded-full border-[1px] border-black p-[6px] hover:text-white hover:bg-black"></i>
+                            <i class="fa-brands fa-x-twitter rounded-full border-[1px] border-black p-[6px] hover:text-white hover:bg-black"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-team-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="flex-1 home-team-img relative overflow-hidden">
+                        <img src="/media/team-2.jpg" alt="team 1 card image" class="z-0 transition-transform duration-[300ms] ease-in-out w-full rounded-t-lg ">
+                        <div class="home-team-img-overlay z-[1] absolute w-full h-full top-0 left-0 opacity-0"></div>
+                    </div>
+                    <div class="flex-1 flex flex-col text-left px-6 py-8 gap-4">
+                        <h3 class="text-left text-xl font-semibold text-primary-hover">Saadia Esmail</h3>
+                        <p>Treasurer and Director</p>
+                        <div class="flex items-center gap-5">
+                            <i class="fa-brands fa-facebook-f aspect-square rounded-full border-[1px] border-black px-[8px] py-[6px] hover:text-white hover:bg-black"></i>
+                            <i class="fa-brands fa-linkedin-in rounded-full border-[1px] border-black p-[6px] hover:text-white hover:bg-black"></i>
+                            <i class="fa-brands fa-x-twitter rounded-full border-[1px] border-black p-[6px] hover:text-white hover:bg-black"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-team-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="flex-1 home-team-img relative overflow-hidden">
+                        <img src="/media/team-3.jpg" alt="team 1 card image" class="z-0 transition-transform duration-[300ms] ease-in-out w-full rounded-t-lg ">
+                        <div class="home-team-img-overlay z-[1] absolute w-full h-full top-0 left-0 opacity-0"></div>
+                    </div>
+                    <div class="flex-1 flex flex-col text-left px-6 py-8 gap-4">
+                        <h3 class="text-left text-xl font-semibold text-primary-hover">Krishna Tiwari</h3>
+                        <p>Ambassador</p>
+                        <div class="flex items-center gap-5">
+                            <i class="fa-brands fa-facebook-f aspect-square rounded-full border-[1px] border-black px-[8px] py-[6px] hover:text-white hover:bg-black"></i>
+                            <i class="fa-brands fa-linkedin-in rounded-full border-[1px] border-black p-[6px] hover:text-white hover:bg-black"></i>
+                            <i class="fa-brands fa-x-twitter rounded-full border-[1px] border-black p-[6px] hover:text-white hover:bg-black"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <footer class="footer mt-auto flex flex-wrap bg-black justify-between items-start content-start px-6 pt-16 pb-32 gap-10">
+    </footer>
+</body>
+</html>
