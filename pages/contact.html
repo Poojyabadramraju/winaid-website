@@ -30,16 +30,16 @@
         </section>
 
         <!-- contact information section -->
-        <section class="grid grid-cols-3 max-md:grid-rows-2 max-md:grid-cols-1 px-6 md:px-12 gap-8 mt-10">
-            <div class="flex flex-col items-start gap-5">
-                <h2 class="text-3xl font-medium">Get in touch with us feel free to write us</h2>
+        <section class="grid grid-cols-3 max-md:grid-cols-1 px-6 md:px-12 gap-8 mt-10">
+            <div class="flex flex-col gap-5">
+                <h2 class="text-3xl font-medium text-left">Get in touch with us feel free to write us</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <div class="flex flex-col items-start gap-5">
                     <div class="flex items-start gap-5">
                         <i class="fa-solid fa-location-dot text-2xl"></i>
                         <div class="text-left">
-                            <h3 class="text-2xl font-medium">Location</h3>
-                            <p>Building 01 Bournadi bus stand Barisal
+                            <h3 class="text-2xl font-medium text-left">Location</h3>
+                            <p class="text-left">Building 01 Bournadi bus stand Barisal
                                 14 Berlin, Germany
                             </p>
                         </div>
@@ -47,7 +47,7 @@
                     <div class="flex items-start gap-5">
                         <i class="fa-solid fa-phone text-2xl"></i>
                         <div class="text-left">
-                            <h3 class="text-2xl font-medium">Phone</h3>
+                            <h3 class="text-2xl font-medium text-left">Phone</h3>
                             <p>
                                 +88 22 33 106 51
                             </p>
@@ -70,42 +70,42 @@
                 </div>
             </div>
 
-            <div class="w-full flex justify-center items-center md:col-[2_/_span_3] bg-black/20 rounded-lg">
-                <form action="" class="contact-form flex flex-col items-center w-full gap-8 mx-2 px-6 py-10">
-                    <div class="flex flex-wrap justify-between items-center w-full gap-3">
-                        <div class="flex-1 bg-white w-[45%] p-4">
+            <div class="flex justify-center items-center md:col-[2_/_span_3] bg-black/20 rounded-lg">
+                <form action="" class="contact-form flex flex-col items-center w-full h-full gap-5 mx-2 px-6 py-10">
+                    <div class="flex flex-wrap max-sm:flex-col justify-between items-center w-full gap-5">
+                        <div class="flex-1 bg-white p-4 max-sm:w-full">
                             <label for="full-name" class="w-full">
                                 <input id="full-name" name="full-name" type="text" placeholder="Full name" class="outline-none w-full">
                             </label>
                         </div>
 
-                        <div class="flex-1 bg-white w-[45%] p-4">
+                        <div class="flex-1 bg-white p-4 max-sm:w-full">
                             <label for="email-address" class="w-full">
                                 <input id="email-address" name="email-address" type="email" placeholder="Email Address" class="outline-none w-full">
                             </label>
                         </div>
                     </div>
-                    <div class="flex justify-between items-center w-full gap-3">
-                        <div class="flex-1 bg-white w-[45%] p-4">
+                    <div class="flex flex-wrap max-sm:flex-col justify-between items-center w-full gap-5">
+                        <div class="flex-1 bg-white p-4 max-sm:w-full">
                             <label for="phone-number" class="w-full">
                                 <input id="phone-number" name="phone-number" type="tel" placeholder="Phone number" class="outline-none w-full">
                             </label>
                         </div>
 
-                        <div class="flex-1 bg-white w-[45%] p-4">
+                        <div class="flex-1 bg-white p-4 max-sm:w-full">
                             <label for="subject" class="w-full">
                                 <input id="subject" name="subject" type="text" placeholder="Subject" class="outline-none w-full">
                             </label>
                         </div>
                     </div>
 
-                    <div class="flex justify-center items-center bg-white w-full">
-                        <label for="message" class="w-full p-4">
+                    <div class="flex justify-center items-center bg-white w-full h-full">
+                        <label for="message" class="w-full h-full p-4">
                             <textarea name="message" id="message" placeholder="Your message here" class="outline-none w-full h-full"></textarea>
                         </label>
                     </div>
 
-                    <div class="contact-message-btn relative overflow-hidden bg-primary px-8 py-4 rounded-full self-start transition-transform duration-[300ms] ease-in-out hover:scale-105 active:scale-95">
+                    <div class="contact-message-btn flex justify-center items-center relative overflow-hidden bg-primary px-8 py-4 rounded-full self-start transition-transform duration-[300ms] ease-in-out hover:scale-105 active:scale-95">
                         <button class="uppercase text-base relative z-[1] text-white">Send message</button>
                     </div>
                 </form>
