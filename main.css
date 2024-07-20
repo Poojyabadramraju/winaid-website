@@ -3,6 +3,7 @@
 :root{
     --primary-color: #fd6711;
     --secondary-color: #13c5d0;
+    --secondary-light-color: #c9fbfdc2;
     --color-three:#fdf4ed;
     --color-four:#fd6711c2;
     --color-five:#13c5d0c2;
@@ -27,8 +28,16 @@
     background-color: var(--primary-color);
 }
 
+.bg-primary-hover:hover{
+    background-color: var(--primary-color);
+}
+
 .bg-secondary{
     background-color: var(--secondary-color);
+}
+
+.bg-secondary-light{
+    background-color: var(--secondary-light-color);
 }
 
 .bg-three{
@@ -59,7 +68,6 @@
     box-shadow: var(--secondary-shadow);
 }
 
-
 body{
     margin: 0;
     padding: 0;
@@ -79,8 +87,8 @@ body{
     z-index: 0;
     width: 100%;
     height: 100%;
-    border-top-right-radius: 25%;
-    border-top-left-radius: 25%;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
     top: 0;
     left: 0;
     bottom: 0;
@@ -103,11 +111,29 @@ body{
     transition: left .5s ease;
 }
 
-.home-proj-card:hover img, .home-proj-img:hover img{
+.overlay-highlyt-anime-img img{
+    z-index: 0;
+    transition: transform 300ms ease-in-out;
+}
+
+/* overlay highlight animation */
+.overlay-highlyt-anime{
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.overlay-highlyt-anime-card:hover img, .overlay-highlyt-anime-img:hover img{
     transform: scale(1.05);
 }
 
-.home-proj-card:hover .home-proj-img-overlay, .home-proj-img:hover .home-proj-img-overlay{
+.overlay-highlyt-anime-card:hover .overlay-highlyt-anime, .overlay-highlyt-anime-img:hover .overlay-highlyt-anime{
     width: 100%;
     height: 100%;
     background-color: white;
@@ -129,12 +155,31 @@ body{
     }
 }
 
-.home-team-card:hover img, .home-team-img:hover img{
+/* overlay normal */
+.overlay-normal-img img{
+    z-index: 0;
+    transition: transform 300ms ease-in-out;
+}
+
+.overlay-normal{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.overlay-normal-card:hover img, .overlay-normal-img:hover img{
     transform: scale(1.05);
 }
 
-.home-team-card:hover .home-team-img-overlay, .home-team-img:hover .home-team-img-overlay{
-    background-color: var(--primary-color);
+.overlay-normal-card:hover .overlay-normal, .overlay-normal-img:hover .overlay-normal{
     opacity: 0.4;
 }
 
@@ -180,8 +225,8 @@ body{
     z-index: 0;
     width: 100%;
     height: 100%;
-    border-top-right-radius: 25%;
-    border-top-left-radius: 25%;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
     top: 0;
     left: 0;
     bottom: 0;

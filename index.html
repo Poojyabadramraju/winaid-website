@@ -10,12 +10,14 @@
     <script defer src="/main.js"></script>
     <script defer src="/js/homescript.js"></script>
 </head>
-<body class="font-['Kumbh Sans']">
+<body>
     <nav class="navbar sticky top-0 z-[1000] flex justify-between items-center gap-5 p-6 min-h-[15vh] bg-white border-b-[1px] border-b-black/20 shadow-lg">
     </nav>
 
     <div class="flex flex-col mb-10 gap-8">
-        <div class="h-[90vh] flex max-md:flex-col-reverse justify-between items-center gap-8 w-full p-14 bg-[url('/media/homebannerbg.png')] bg-cover bg-center bg-no-repeat mb-10">
+           
+        <!-- banner section -->
+        <section class="flex max-md:flex-col-reverse justify-between items-center gap-8 w-full p-14 bg-[url('/media/homebannerbg.png')] bg-cover bg-center bg-no-repeat mb-10">
             <div class="flex-1 flex opacity-90">
                 <img src="/media/homebannerimg.png" alt="wildlife banner" class="w-full">
             </div>
@@ -26,13 +28,14 @@
                 <p class="text-[45px] font-bold text-white">
                     Let’s make a difference and save all of the planet’s creatures. 
                 </p>
-                <div class="home-donate-btn relative overflow-hidden rounded-full bg-secondary px-6 py-2">
+                <div class="home-donate-btn relative overflow-hidden rounded-full bg-secondary px-6 py-2 transition-transform duration-[200ms] ease-in-out hover:scale-105 active:scale-95">
                     <a href="/pages/donate.html" class="z-10"><button class="text-xl relative z-[1] text-white">Donate</button></a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="flex max-md:flex-col justify-between items-center gap-8 px-6 md:px-12">
+        <!-- about section -->
+        <section class="flex max-md:flex-col justify-between items-center gap-8 px-6 md:px-12">
             <div class="flex-1">
                 <img src="/media/wildlifeimg2.jpg" alt="wildlife image" class="w-full h-[300px] rounded-3xl">
             </div>
@@ -47,21 +50,22 @@
                 <p class="text-lg">
                     In the wilderness, every heartbeat carries a reminder of our responsibility: to safeguard, protect, and ensure the continuity of the world’s harmonies.
                 </p>
-                <div class="self-start home-donate-btn relative overflow-hidden rounded-full bg-secondary px-6 py-2">
+                <div class="self-start home-donate-btn relative overflow-hidden rounded-full bg-secondary px-6 py-2 transition-transform duration-[200ms] ease-in-out hover:scale-105 active:scale-95">
                     <a href="/pages/about.html" class="z-10"><button class="text-xl relative z-[1] text-white">About us</button></a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="flex flex-col bg-three px-6 md:px-12 py-14 gap-10 mt-5">
+        <!-- projects section -->
+        <section class="flex flex-col bg-three px-6 md:px-12 py-14 gap-10 mt-5">
             <h2 class="text-center uppercase font-semibold text-primary"> On Going Projects</h2>
             <div class="flex flex-wrap justify-center items-center content-center lg:gap-8 gap-6">
-                <div class="home-proj-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
-                    <div class="home-proj-img relative flex-1 overflow-hidden">
-                        <img src="/media/projectscardimg1.jpg" alt="wildlife project card image" class="z-0 aspect-square transition-transform duration-[300ms] ease-in-out w-full rounded-t-lg ">
-                        <div class="home-proj-img-overlay z-[1] absolute w-0 h-0 top-[50%] left-[50%] opacity-0 transition-all duration-[300ms] ease-in-out"></div>
+                <div class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="overlay-highlyt-anime-img relative flex-1 overflow-hidden">
+                        <img src="/media/projectscardimg1.jpg" alt="wildlife project card image" class="aspect-square w-full rounded-t-lg">
+                        <div class="overlay-highlyt-anime"></div>
                     </div>
-                    <div class="flex-1 flex flex-col text-left px-6 py-8 gap-5">
+                    <div class="flex-1 flex flex-col justify-center items-start text-left px-6 py-8 gap-4">
                         <h3 class="text-left text-xl font-semibold text-primary-hover">Wildlife Awareness Campaign</h3>
                         <div class="text-base round-lg bg-three px-4 py-6">
                             <p class="mb-5">
@@ -82,12 +86,12 @@
                     </div>
                 </div>
 
-                <div class="home-proj-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
-                    <div class="home-proj-img relative flex-1 overflow-hidden">
-                        <img src="/media/projectscardimg2.jpg" alt="wildlife project card image" class="z-0 aspect-square transition-transform duration-[300ms] ease-in-out w-full rounded-t-lg ">
-                        <div class="home-proj-img-overlay z-[1] absolute w-0 h-0 top-[50%] left-[50%] opacity-0 transition-all duration-[300ms] ease-in-out"></div>
+                <div class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="overlay-highlyt-anime-img relative flex-1 overflow-hidden">
+                        <img src="/media/projectscardimg2.jpg" alt="wildlife project card image" class="z-0 aspect-square w-full rounded-t-lg ">
+                        <div class="overlay-highlyt-anime z-[1]"></div>
                     </div>
-                    <div class="flex-1 flex flex-col text-left px-6 py-8 gap-5">
+                    <div class="flex-1 flex flex-col justify-center items-start text-left px-6 py-8 gap-4">
                         <h3 class="text-left text-xl font-semibold text-primary-hover">Marine Conservation Efforts</h3>
                         <div class="text-base round-lg bg-[#fdf4ed] px-4 py-6">
                             <p class="mb-5">
@@ -108,12 +112,12 @@
                     </div>
                 </div>
 
-                <div class="home-proj-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
-                    <div class="home-proj-img relative flex-1 overflow-hidden">
-                        <img src="/media/projectscardimg3.jpg" alt="wildlife project card image" class="z-0 aspect-square transition-transform duration-[300ms] ease-in-out w-full rounded-t-lg ">
-                        <div class="home-proj-img-overlay z-[1] absolute w-0 h-0 top-[50%] left-[50%] opacity-0 transition-all duration-[300ms] ease-in-out"></div>
+                <div class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="overlay-highlyt-anime-img relative flex-1 overflow-hidden">
+                        <img src="/media/projectscardimg3.jpg" alt="wildlife project card image" class="z-0 aspect-square w-full rounded-t-lg ">
+                        <div class="overlay-highlyt-anime z-[1]"></div>
                     </div>
-                    <div class="flex-1 flex flex-col text-left px-6 py-8 gap-5">
+                    <div class="flex-1 flex flex-col justify-center items-start text-left px-6 py-8 gap-4">
                         <h3 class="text-left text-xl font-semibold text-primary-hover">Forest Restoration Project</h3>
                         <div class="text-base round-lg bg-[#fdf4ed] px-4 py-6">
                             <p class="mb-5">
@@ -134,9 +138,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="flex max-md:flex-col flex-row-reverse justify-between items-center gap-8 px-6 mt-10 md:px-12">
+        <!-- our mission section -->
+        <section class="flex max-md:flex-col flex-row-reverse justify-between items-center gap-8 px-6 mt-10 md:px-12">
             <div class="flex-1">
                 <img src="/media/wildlifeimg.jpg" alt="wildlife image" class="w-full h-[450px] rounded-3xl">
             </div>
@@ -152,9 +157,10 @@
                     Through our platform, we aim to unite people from diverse backgrounds and perspectives to work together towards a future where humans and wildlife coexist in harmony, ensuring our planet's long-term health and prosperity.
                 </p>
             </div>
-        </div>
+        </section>
 
-        <div class="flex flex-col px-6 md:px-12 py-14 gap-10 mt-5">
+        <!-- find more section -->
+        <section class="flex flex-col px-6 md:px-12 py-14 gap-10 mt-5">
             <h2 class="text-center text-4xl font-semibold">Find out more & Get Involved</h2>
             <div class="flex flex-wrap justify-center items-center content-center lg:gap-8 gap-6">
                 <div class="relative flex justify-center items-center overflow-hidden min-w-[150px] w-[350px] shadow-primary rounded-lg">
@@ -187,19 +193,20 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="flex flex-col bg-[#f9f2ed] px-6 md:px-12 py-14 gap-10 mt-5">
+        <!-- team section -->
+        <section class="flex flex-col bg-[#f9f2ed] px-6 md:px-12 py-14 gap-10 mt-5">
             <h2 class="text-center uppercase font-semibold text-primary">Our Team</h2>
             <p class="text-center text-4xl font-semibold">About Senior Leadership</p>
 
             <div class="flex flex-wrap justify-center items-center content-center lg:gap-8 gap-6">
-                <div class="home-team-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
-                    <div class="flex-1 home-team-img relative overflow-hidden">
+                <div class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="flex-1 overlay-normal-img relative overflow-hidden">
                         <img src="/media/team-1.jpg" alt="team 1 card image" class="z-0 transition-transform duration-[300ms] ease-in-out w-full rounded-t-lg ">
-                        <div class="home-team-img-overlay z-[1] absolute w-full h-full top-0 left-0 opacity-0"></div>
+                        <div class="overlay-normal z-[1] absolute w-full h-full top-0 left-0 opacity-0"></div>
                     </div>
-                    <div class="flex-1 flex flex-col text-left px-6 py-8 gap-4">
+                    <div class="flex-1 flex flex-col justify-center items-start text-left px-6 py-8 gap-4">
                         <h3 class="text-left text-xl font-semibold text-primary-hover">Asif Wadia</h3>
                         <p>President and Director</p>
                         <div class="flex items-center gap-5">
@@ -210,12 +217,12 @@
                     </div>
                 </div>
 
-                <div class="home-team-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
-                    <div class="flex-1 home-team-img relative overflow-hidden">
+                <div class="overlay-normal-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="flex-1 overlay-normal-img relative overflow-hidden">
                         <img src="/media/team-2.jpg" alt="team 1 card image" class="z-0 transition-transform duration-[300ms] ease-in-out w-full rounded-t-lg ">
-                        <div class="home-team-img-overlay z-[1] absolute w-full h-full top-0 left-0 opacity-0"></div>
+                        <div class="overlay-normal z-[1] absolute w-full h-full top-0 left-0 opacity-0"></div>
                     </div>
-                    <div class="flex-1 flex flex-col text-left px-6 py-8 gap-4">
+                    <div class="flex-1 flex flex-col justify-center items-start text-left px-6 py-8 gap-4">
                         <h3 class="text-left text-xl font-semibold text-primary-hover">Saadia Esmail</h3>
                         <p>Treasurer and Director</p>
                         <div class="flex items-center gap-5">
@@ -226,12 +233,12 @@
                     </div>
                 </div>
 
-                <div class="home-team-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
-                    <div class="flex-1 home-team-img relative overflow-hidden">
+                <div class="overlay-normal-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="flex-1 overlay-normal-img relative overflow-hidden">
                         <img src="/media/team-3.jpg" alt="team 1 card image" class="z-0 transition-transform duration-[300ms] ease-in-out w-full rounded-t-lg ">
-                        <div class="home-team-img-overlay z-[1] absolute w-full h-full top-0 left-0 opacity-0"></div>
+                        <div class="overlay-normal z-[1] absolute w-full h-full top-0 left-0 opacity-0"></div>
                     </div>
-                    <div class="flex-1 flex flex-col text-left px-6 py-8 gap-4">
+                    <div class="flex-1 flex flex-col justify-center items-start text-left px-6 py-8 gap-4">
                         <h3 class="text-left text-xl font-semibold text-primary-hover">Krishna Tiwari</h3>
                         <p>Ambassador</p>
                         <div class="flex items-center gap-5">
@@ -242,12 +249,99 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- blogs section -->
+        <section class="flex flex-col px-6 md:px-12 py-14 gap-10 mt-5">
+            <div class="flex justify-between items-center gap-5">
+                <div class="self-start">
+                    <h2 class="text-left uppercase font-semibold text-primary">Blogs & Latest News</h2>
+                    <p class="text-left text-lg font-medium mt-5">Stay connected with out organisation&apos;s news, and initiative driving positive change</p>
+                </div>
+                <div class="home-donate-btn relative overflow-hidden rounded-full bg-secondary px-6 py-2 transition-transform duration-75 ease-in-out hover:scale-105 active:scale-95">
+                    <a href="/pages/donate.html" class="z-10"><button class="text-xl relative z-[1] text-white">Read all Blogs</button></a>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center items-center content-center lg:gap-8 gap-6">
+                <div class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="flex-1 overlay-highlyt-anime-img relative overflow-hidden">
+                        <img src="/media/blogimg1.jpg" alt="team 1 card image" class="aspect-[3/2] w-full rounded-t-lg ">
+                        <div class="overlay-highlyt-anime"></div>
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center text-left px-6 py-8 gap-4">
+                        <h3 class="text-left text-xl font-semibold text-primary-hover">Saving the Rainforests</h3>
+                        <div class="flex items-center gap-5">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-left"></i>
+                                <p class="text-left">July 15th 2024</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-comment text-left"></i>
+                                <p class="text-left">3</p>
+                            </div>
+                        </div>
+                        <p>Exploring initiatives to protect and restore the world's rainforests</p>
+                        <div class="home-donate-btn self-start relative overflow-hidden rounded-full bg-secondary px-6 py-2 transition-transform duration-[300ms] ease-in-out hover:scale-105 active:scale-95">
+                            <a href="/pages/donate.html" class="z-10"><button class="text-xl relative z-[1] text-white">Read more</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="flex-1 overlay-highlyt-anime-img relative overflow-hidden">
+                        <img src="/media/blogimg2.jpg" alt="team 1 card image" class="aspect-[3/2] w-full rounded-t-lg ">
+                        <div class="overlay-highlyt-anime"></div>
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center text-left px-6 py-8 gap-4">
+                        <h3 class="text-left text-xl font-semibold text-primary-hover">Eco-friendly Travel Tips</h3>
+                        <div class="flex items-center gap-5">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-left"></i>
+                                <p class="text-left">July 15th 2024</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-comment text-left"></i>
+                                <p class="text-left">3</p>
+                            </div>
+                        </div>
+                        <p>How to enjoy nature responsibly and support wildlife conservation while travelling</p>
+                        <div class="home-donate-btn self-start relative overflow-hidden rounded-full bg-secondary px-6 py-2 transition-transform duration-[300ms] ease-in-out hover:scale-105 active:scale-95">
+                            <a href="/pages/donate.html" class="z-10"><button class="text-xl relative z-[1] text-white">Read more</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="flex-1 overlay-highlyt-anime-img relative overflow-hidden">
+                        <img src="/media/blogimg3.jpg" alt="team 1 card image" class="aspect-[3/2] w-full rounded-t-lg ">
+                        <div class="overlay-highlyt-anime"></div>
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center text-left px-6 py-8 gap-4">
+                        <h3 class="text-left text-xl font-semibold text-primary-hover">The Role of National Parks</h3>
+                        <div class="flex items-center gap-5">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-left"></i>
+                                <p class="text-left">July 15th 2024</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-comment text-left"></i>
+                                <p class="text-left">3</p>
+                            </div>
+                        </div>
+                        <p>Exploring how national parks conserve wildlife and natural habitats</p>
+                        <div class="home-donate-btn self-start relative overflow-hidden rounded-full bg-secondary px-6 py-2 transition-transform duration-[300ms] ease-in-out hover:scale-105 active:scale-95">
+                            <a href="/pages/donate.html" class="z-10"><button class="text-xl relative z-[1] text-white">Read more</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         
     </div>
 
-    <footer class="footer mt-auto flex flex-wrap bg-black justify-between items-start content-start px-6 pt-16 pb-32 gap-10">
+    <footer class="footer mt-auto flex flex-wrap bg-black justify-between items-start content-start px-6 pt-16 pb-48 gap-10 md:bg-[url('/media/footer-left.png'),_url('/media/footer-right.png')] md:bg-[position:left_bottom,_right_bottom] bg-[size:auto,_auto] bg-no-repeat">
     </footer>
 </body>
 </html>

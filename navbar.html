@@ -11,7 +11,7 @@
 </ul>
 <div class="flex items-center justify-between lg:gap-8 gap-5 ml-auto">
     <i class="fa-solid fa-magnifying-glass text-xl"></i>
-    <div class="donate-btn max-md:hidden relative overflow-hidden border-[1px] border-[#fd6711] px-6 py-2 rounded-full transition-[color] delay-[500ms] ease-in">
+    <div class="nav-donate-btn max-md:hidden relative overflow-hidden border-[1px] border-[#fd6711] px-6 py-2 rounded-full transition-[color] delay-[500ms] ease-in">
         <a href="/pages/donate.html" class="z-10"><button class="text-xl relative z-[1]">Donate</button></a>
     </div>
     <i class="fa-solid fa-bars text-2xl" id="nav-menu-open-btn"></i>
@@ -28,7 +28,7 @@
         <li class="w-full p-4 border-b-[1px] border-b-black/20"><a href="/pages/campaigns.html" class="hover:text-[#fd6711]">Campaigns</a></li>
         <li class="w-full p-4 border-b-[1px] border-b-black/20"><a href="/pages/contact.html" class="hover:text-[#fd6711]">Contact us</a></li>
     </ul>
-    <div class="self-start mt-5 ml-5 donate-btn relative overflow-hidden border-[1px] border-[#fd6711] px-6 py-2 rounded-full transition-[color] delay-[500ms] ease-in">
+    <div class="self-start mt-5 ml-5 nav-donate-btn relative overflow-hidden border-[1px] border-[#fd6711] px-6 py-2 rounded-full transition-[color] delay-[500ms] ease-in">
         <a href="/pages/donate.html" class="z-10"><button class="text-xl relative z-[1]">Donate</button></a>
     </div>
 </div>
@@ -46,11 +46,20 @@
         top: 8px;
     }
 
-    .navbar .donate-btn:hover{
-        color: white;
+    .navbar .nav-donate-btn{
+        transition: transform 300ms ease-in-out;
     }
 
-    .navbar .donate-btn::after{
+    .navbar .nav-donate-btn:hover{
+        color: white;
+        scale: 1.05;
+    }
+
+    .navbar .nav-donate-btn:active{
+        scale: 0.95;
+    }
+
+    .navbar .nav-donate-btn::after{
         position: absolute;
         content: "";
         background-color: #fd6711;
@@ -67,7 +76,7 @@
         transition: transform 500ms ease-in-out;
     }
 
-    .navbar .donate-btn:hover::after{
+    .navbar .nav-donate-btn:hover::after{
         transform: translateY(0);
     }
 
