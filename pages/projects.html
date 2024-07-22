@@ -10,8 +10,11 @@
     <script defer src="/main.js"></script>
     <script defer src="/js/script.js"></script>
 </head>
-<body class="font-['Kumbh Sans']">
-    <nav class="navbar sticky z-[1000] top-0 flex justify-between items-center gap-5 p-6 min-h-[15vh] bg-white border-b-[1px] border-b-black/20 shadow-lg"></nav>
+<body >
+
+    <div id="preloader" class="flex justify-center items-center"></div>
+
+    <div id="navbar-include" class="sticky top-0 z-[1000]"></div>
 
     <div class="flex flex-col mb-10 gap-8">
 
@@ -139,7 +142,7 @@
         </section>
     </div>
 
-    <footer class="footer mt-auto flex flex-wrap bg-black justify-between items-start px-6 pt-16 pb-48 gap-10 md:bg-[url('/media/footer-left.png'),_url('/media/footer-right.png')] md:bg-[position:left_bottom,_right_bottom] bg-[size:auto,_auto] bg-no-repeat">
-    </footer>
+    <div id="footer-include" class="mt-auto"></div>
+
 </body>
 </html>

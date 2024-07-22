@@ -13,5 +13,5 @@ function fetchContent(url, targetSelector) {
         })
 };
 
-fetchContent('/navbar.html','.navbar');
-fetchContent('/footer.html','.footer');
+fetchContent('/navbar.html','#navbar-include');
+fetchContent('/footer.html','#footer-include');
