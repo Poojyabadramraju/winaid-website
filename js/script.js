@@ -40,7 +40,7 @@ progressBars.forEach((progressBar) => {
     observer.observe(progressBar);
 }); 
 
-const homeBannerContent=document.querySelector(".home-banner").children;
+// const homeBannerContent=document.querySelector(".home-banner").children;
 
 // window.addEventListener("load",()=>{
 //     Array.from(homeBannerContent).forEach((content)=>{

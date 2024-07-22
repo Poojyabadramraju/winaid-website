@@ -19,16 +19,10 @@
     <div class="flex flex-col mb-10 gap-8">
 
         <!-- banner section -->
-        <section class="h-[90vh] flex relative">
-            <img src="/media/banner.jpg" alt="wildlife banner image" class="w-full object-cover object-center">
+        <section class="md:h-[75vh] h-[50vh] flex relative">
+            <img src="/media/giraffe-2.jpg" alt="wildlife banner image" class="w-full object-cover object-center">
             <div class="flex flex-col absolute justify-center items-center gap-4 w-full h-full text-center text-white bg-black/30">
                 <h1 class="lg:text-[60px] text-2xl md:text-4xl font-extrabold tracking-wide">Contact us</h1>
-                <div class="text-white text-2xl">
-                    Home /
-                    <span class="text-primary">
-                        Contact
-                    </span>
-                </div>
             </div>
         </section>
 
@@ -102,14 +96,13 @@
                         </div>
                     </div>
 
-                    <div class="flex justify-center items-center bg-white w-full h-full">
+                    <div class="flex-grow flex justify-center items-center bg-white w-full">
                         <label for="message" class="w-full h-full p-4">
                             <textarea name="message" id="message" placeholder="Your message here" class="outline-none w-full h-full"></textarea>
                         </label>
                     </div>
-
-                    <div class="contact-message-btn flex justify-center items-center relative overflow-hidden bg-primary px-8 py-4 rounded-full self-start transition-transform duration-[300ms] ease-in-out hover:scale-105 active:scale-95">
-                        <button class="uppercase text-base relative z-[1] text-white">Send message</button>
+                    <div class="overlay-btn self-start">
+                        <button class="uppercase text-base relative z-[1] text-white px-6 py-2">Send message</button>
                     </div>
                 </form>
             </div>

@@ -81,6 +81,7 @@ body{
 
 /* page preloader */
 #preloader{
+    background-color: white;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -89,17 +90,61 @@ body{
     width: 100%;
     height: 100vh;
     z-index: 100001;
-    transition: transform 500ms ease-in-out;
-    background: url('/media/preloader-gif.svg');
+    /* background: url('/media/preloader-gif.svg');
     background-color: #ffffff;
     background-position: center center;
     background-repeat: no-repeat;
     background-image: url('/media/preloader-gif.svg');
-    background-size: 120px;
+    background-size: 120px; */
 }
 
-/* home page css */
-.home-donate-btn::after{
+#preloader .loader-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+}
+
+.loader{
+    padding: 5px;
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    border: 3px solid white;
+    border-radius: 50%;
+    border-bottom: 3px solid var(--primary-color);
+    border-top: 3px solid var(--primary-color);
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.overlay-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+    transition: transform 500ms ease-in-out;
+}
+
+.overlay-btn:hover{
+    scale: 1.05;
+    transition: transform 500ms ease-in-out;
+}
+
+.overlay-btn:active{
+    scale: 0.95;
+}
+
+.overlay-btn::after{
     position: absolute;
     content: "";
     background-color: var(--primary-color);
@@ -114,9 +159,11 @@ body{
     transition: transform 500ms ease-in-out;
 }
 
-.home-donate-btn:hover::after{
+.overlay-btn:hover::after{
     transform: translateY(0);
 }
+
+/* home page css */
 
 .donation-progress{
     width: 0;

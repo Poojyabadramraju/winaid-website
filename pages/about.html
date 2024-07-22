@@ -19,23 +19,18 @@
     <div class="flex flex-col mb-10 gap-8">
 
         <!-- banner section -->
-        <section class="h-[90vh] flex relative">
-            <img src="/media/banner.jpg" alt="wildlife banner image" class="w-full object-cover object-center">
+        <section class="md:h-[75vh] h-[50vh] flex relative">
+            <img src="/media/cheetah.jpg" alt="wildlife banner image" class="w-full object-cover object-center">
             <div class="flex flex-col absolute justify-center items-center gap-4 w-full h-full text-center text-white bg-black/30">
-                <h1 class="lg:text-[60px] text-2xl md:text-4xl font-extrabold tracking-wide">About</h1>
-                <div class="text-white text-2xl">
-                    Home /
-                    <span class="text-primary">
-                        About
-                    </span>
-                </div>
+                <h1 class="lg:text-[60px] text-2xl md:text-4xl font-extrabold tracking-wide">About us</h1>
             </div>
         </section>
 
         <!-- about section -->
-        <section class="flex max-md:flex-col justify-between items-start gap-8 px-6 mt-10 md:px-12">
-            <div class="flex-1">
-                <img src="/media/wildlifeimg.jpg" alt="wildlife image" class="w-full h-[550px] rounded-3xl">
+        <section class="flex max-md:flex-col justify-between items-center gap-8 px-6 mt-10 md:px-12">
+            <div class="flex-1 relative">
+                <img src="/media/tiger.jpg" alt="wildlife image" class="w-full h-full">
+                <div class="w-full absolute top-0 bottom-0 right-0 left-0 shadow-[0px_0px_5px_13px_white_inset]"></div>
             </div>
 
             <div class="flex-1 flex flex-col text-left gap-4">
@@ -56,8 +51,9 @@
         </section>
 
         <section class="flex max-md:flex-col flex-row-reverse justify-between items-center gap-8 px-6 mt-10 md:px-12">
-            <div class="flex-1">
-                <img src="/media/save-wildlife.png" alt="wildlife image" class="w-full h-[500px] rounded-3xl">
+            <div class="flex-1 relative">
+                <img src="/media/giraffe.jpg" alt="wildlife image" class="w-full h-[500px]">
+                <div class="w-full absolute top-0 bottom-0 right-0 left-0 shadow-[0px_0px_5px_13px_white_inset]"></div>
             </div>
 
             <div class="flex-1 flex flex-col text-left gap-4">
@@ -82,7 +78,7 @@
     </div>
 
     <!-- our mission section -->
-    <section class="flex justify-center items-center w-full py-14 bg-black/40 bg-[url('/media/aboutbanner.jpg')] relative bg-blend-overlay bg-fixed bg-cover bg-no-repeat mb-10">
+    <section class="flex justify-center items-center w-full py-14 bg-black/40 bg-[url('/media/lion.jpg')] relative bg-blend-overlay bg-fixed bg-cover bg-center bg-no-repeat mb-10">
         <div class="flex flex-col justify-center items-center text-center w-full gap-5 px-5">
             <h2 class="uppercase font-semibold text-lg tracking-wide text-primary">
                 Our Mission
@@ -93,7 +89,7 @@
             <p class="text-lg text-white">
                 Through our platform, we aim to unite people from diverse backgrounds and perspectives to work together towards a future where humans and wildlife coexist in harmony, ensuring our planet's long-term health and prosperity.
             </p>
-            <div class="flex justify-center items-center about-donate-btn relative overflow-hidden bg-primary shadow-[4px_4px_8px_3px] shadow-white/20 transition-transform duration-[300ms] ease-in-out hover:scale-105 active:scale-95">
+            <div class="overlay-btn shadow-[4px_4px_8px_3px] shadow-white/20">
                 <a href="/pages/donate.html" ><button class="text-xl relative z-[1] text-white px-6 py-2 ">Donate</button></a>
             </div>
         </div>

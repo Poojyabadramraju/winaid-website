@@ -6,42 +6,42 @@
     </div>
     <ul class="nav-links max-md:hidden flex justify-between items-center lg:gap-8 gap-5 text-xl">
         <li ><a href="/index.html" class="hover:text-[#fd6711]">Home</a></li>
-        <li ><a href="/pages/about.html" class="hover:text-[#fd6711]" >About</a></li>
-        <li ><a href="/pages/projects.html" class="hover:text-[#fd6711]">Projects</a></li>
-        <li ><a href="/pages/contact.html" class="hover:text-[#fd6711]">Contact</a></li>
+        <li ><a href="/pages/about.html" class="hover:text-[#fd6711]" >About us</a></li>
+        <li ><a href="/pages/projects.html" class="hover:text-[#fd6711]">Our Projects</a></li>
+        <li ><a href="/pages/contact.html" class="hover:text-[#fd6711]">Contact us</a></li>
     </ul>
     <div class="flex items-center justify-between gap-4 ml-auto">
         <i class="nav-search-icon fa-solid fa-magnifying-glass text-xl hover:text-[#fd6711] cursor-pointer "></i>
-        <div class="flex justify-center items-center nav-donate-btn max-md:hidden relative overflow-hidden border-[1px] border-[#fd6711] rounded-full transition-[color] delay-[500ms] ease-in">
-            <a href="/pages/donate.html"><button class="text-xl relative z-[1] px-6 py-2 ">Donate</button></a>
+        <div class="flex justify-center items-center nav-donate-btn max-md:hidden relative overflow-hidden border-[1px] border-[#fd6711] text-black rounded-full">
+            <a href="/pages/donate.html"><button class="text-xl relative z-[1] px-6 py-2 ">Donate now</button></a>
         </div>
-        <i class="fa-solid fa-bars text-2xl cursor-pointer" id="nav-menu-open-btn"></i>
+        <i class="fa-solid fa-bars text-2xl cursor-pointer hover:text-[#fd6711]" id="nav-menu-open-btn"></i>
     </div>
     
     <div class="dropdown-menu overflow-x-hidden flex flex-col fixed z-[1001] top-0 right-[-100%] w-[300px] max-[300px]:w-full h-full bg-white py-5 shadow-xl transition-[right] duration-[1s] ease-in-out">
-        <i class="fa-solid fa-xmark relative top-[-100%] self-end text-2xl px-5 transition-[top] duration-[500ms] delay-[1s] ease-in-out cursor-pointer" id="nav-menu-close-btn"></i>
+        <i class="fa-solid fa-xmark relative top-[-100%] self-end text-2xl px-5 transition-[top] duration-[500ms] delay-[1s] ease-in-out cursor-pointer hover:text-[#fd6711]" id="nav-menu-close-btn"></i>
         <div class="self-start border-b-[1px] border-b-black/20 w-full px-5 pb-5">
             <img src="/media/dark-logo.png" alt="website logo and name" class="max-w-full h-[40px] object-cover">
         </div>
         <ul class="nav-links w-full flex flex-col justify-around items-start text-lg">
             <li class="w-full p-4 border-b-[1px] border-b-black/20"><a href="/index.html" class="hover:text-[#fd6711]">Home</a></li>
             <li class="w-full p-4 border-b-[1px] border-b-black/20"><a href="/pages/about.html" class="hover:text-[#fd6711]">About us</a></li>
-            <li class="w-full p-4 border-b-[1px] border-b-black/20"><a href="/pages/projects.html" class="hover:text-[#fd6711]">Projects</a></li>
+            <li class="w-full p-4 border-b-[1px] border-b-black/20"><a href="/pages/projects.html" class="hover:text-[#fd6711]">Our Projects</a></li>
             <li class="w-full p-4 border-b-[1px] border-b-black/20"><a href="/pages/contact.html" class="hover:text-[#fd6711]">Contact us</a></li>
         </ul>
-        <div class="flex justify-center items-center self-start mt-5 ml-5 nav-donate-btn relative overflow-hidden border-[1px] border-[#fd6711] rounded-full transition-[color] delay-[500ms] ease-in">
-            <a href="/pages/donate.html"><button class="text-xl relative z-[1] px-6 py-2 ">Donate</button></a>
+        <div class="flex justify-center items-center self-start mt-5 ml-5 nav-donate-btn relative overflow-hidden border-[1px] border-[#fd6711] text-black rounded-full">
+            <a href="/pages/donate.html"><button class="text-xl relative z-[1] px-6 py-2 ">Donate now</button></a>
         </div>
     </div>
 </nav>
 
 <div class="search-drop flex flex-col justify-center">
-    <i class="fa-solid fa-xmark self-end text-4xl absolute top-8 right-5 text-white px-5" id="search-close-btn"></i>
+    <i class="fa-solid fa-xmark self-end text-4xl absolute top-8 right-5 text-white px-5 hover:text-[#fd6711]" id="search-close-btn"></i>
     <div class="search-container flex justify-between items-center self-center w-10 h-[10%] relative bg-white p-4">
         <label for="search-bar" class="flex-1 w-full h-full">
-            <input type="search" id="search-bar" name="search-bar" placeholder="Search here" class="placeholder:text-black outline-none p-2 w-full h-full">
+            <input type="search" id="search-bar" name="search-bar" placeholder="Search here" class="placeholder:text-black outline-none p-2 w-full h-full focus-within:">
         </label>
-        <i class="search-bar-icon fa-solid fa-magnifying-glass text-2xl font-extrabold invisible"></i>
+        <i class="search-bar-icon fa-solid fa-magnifying-glass text-2xl font-extrabold invisible hover:text-[#fd6711]"></i>
     </div>
 </div>
 
@@ -61,12 +61,13 @@
     }
 
     .navbar .nav-donate-btn{
-        transition: transform 300ms ease-in-out;
+        transition: color 500ms ease-in, transform 300ms ease-in-out;
     }
 
     .navbar .nav-donate-btn:hover{
         color: white;
         scale: 1.05;
+        transition: transform 500ms ease-in-out;
     }
 
     .navbar .nav-donate-btn:active{
