@@ -3,20 +3,6 @@ window.addEventListener("load", () => {
     preLoader.style.display = "none";
 })
 
-const projCards = document.querySelector(".proj-cards").children;
-Array.from(projCards).forEach((projCard) => {
-    const projCardId = projCard.getAttribute("id");
-    const projCardImg = projCard.querySelector("a");
-    projCardImg.href = `/pages/project-subpage.html?project=${projCardId}`;
-})
-
-const blogCards = document.querySelector(".blog-cards").children;
-Array.from(blogCards).forEach((blogCard) => {
-    const blogCardId = blogCard.getAttribute("id");
-    const blogCardButton = blogCard.querySelector("a");
-    blogCardButton.href = `/pages/blog-subpage.html?blog=${blogCardId}`;
-})
-
 const progressBars = document.querySelectorAll(".donation-progress");
 
 const observer = new IntersectionObserver((entries, observer) => {
@@ -55,18 +41,38 @@ progressBars.forEach((progressBar) => {
     observer.observe(progressBar);
 });
 
-const observer2 = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("showY");
-        } else {
-            entry.target.classList.remove("showY");
-        }
-        observer.unobserve(entry.target);
+const projCards = document.querySelector(".proj-cards");
+if(projCards){
+    Array.from(projCards.children).forEach((projCard) => {
+        const projCardId = projCard.getAttribute("id");
+        const projCardImg = projCard.querySelector("a");
+        projCardImg.href = `/pages/project-subpage.html?project=${projCardId}`;
     })
-}, {
-    threshold: 0.1
-})
+}
+
+const blogCards = document.querySelector(".blog-cards");
+if(blogCards){
+    Array.from(blogCards.children).forEach((blogCard) => {
+        const blogCardId = blogCard.getAttribute("id");
+        const blogCardButton = blogCard.querySelector("a");
+        blogCardButton.href = `/pages/blog-subpage.html?blog=${blogCardId}`;
+    })
+}
+
+
+
+// const observer2 = new IntersectionObserver((entries, observer) => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add("showY");
+//         } else {
+//             entry.target.classList.remove("showY");
+//         }
+//         observer.unobserve(entry.target);
+//     })
+// }, {
+//     threshold: 0.1
+// })
 
 // const homeBannerContent=document.querySelector(".home-banner").children;
 

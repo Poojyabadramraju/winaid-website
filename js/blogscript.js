@@ -15,13 +15,13 @@ window.onload = () => {
     const blogContent4 = document.querySelector(".blog-content-4");
 
     switch (blog) {
-        case "Saving the Rainforests":
+        case "saving-the-rainforests":
             updateBlog1Content();
             break;
-        case "Eco-friendly Travel Tips":
+        case "eco-friendly-travel-tips":
             updateBlog2Content();
             break;
-        case "The Role of National Parks":
+        case "the-role-of-national-parks":
             updateBlog3Content();
             break;
         default:
@@ -37,7 +37,7 @@ window.onload = () => {
         blogImage2.src = '/media/blogcardimg1.jpg';
         blogAdmin.textContent = 'admin';
         blogDate.textContent = '23 July, 2024',
-        blogComments.textContent = '0',
+        blogComments.textContent = '0 Comments',
         blogContent1.textContent = 'Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse per curabitur aptent laoreet fringilla lacus euismod placerat? Proin odio convallis taciti placerat posuere orci ornare quisque. Quis fames sit; quis sem eleifend molestie. Finibus duis justo felis cras ex montes. Bibendum praesent rutrum mollis dignissim justo tempus. Blandit maximus hendrerit per ultrices nec ac elementum. Pretium maecenas arcu hendrerit nascetur tortor porttitor parturient nascetur.';
         blogContent2.textContent = 'Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse per curabitur aptent laoreet fringilla lacus euismod placerat? Proin odio convallis taciti placerat posuere orci ornare quisque. Quis fames sit; quis sem eleifend molestie. Finibus duis justo felis cras ex montes. Bibendum praesent rutrum mollis dignissim justo tempus. Blandit maximus hendrerit per ultrices nec ac elementum. Pretium maecenas arcu hendrerit nascetur tortor porttitor parturient nascetur.';
         blogContent3.textContent = 'Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse per curabitur aptent laoreet fringilla lacus euismod placerat? Proin odio convallis taciti placerat posuere orci ornare quisque. Quis fames sit; quis sem eleifend molestie. Finibus duis justo felis cras ex montes. Bibendum praesent rutrum mollis dignissim justo tempus. Blandit maximus hendrerit per ultrices nec ac elementum. Pretium maecenas arcu hendrerit nascetur tortor porttitor parturient nascetur.';
@@ -53,7 +53,7 @@ window.onload = () => {
         blogImage2.src = '/media/blogcardimg2.jpg';
         blogAdmin.textContent = 'admin';
         blogDate.textContent = '23 July, 2024',
-        blogComments.textContent = '0',
+        blogComments.textContent = '0 Comments',
         blogContent1.textContent = 'Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse per curabitur aptent laoreet fringilla lacus euismod placerat? Proin odio convallis taciti placerat posuere orci ornare quisque. Quis fames sit; quis sem eleifend molestie. Finibus duis justo felis cras ex montes. Bibendum praesent rutrum mollis dignissim justo tempus. Blandit maximus hendrerit per ultrices nec ac elementum. Pretium maecenas arcu hendrerit nascetur tortor porttitor parturient nascetur.';
         blogContent2.textContent = 'Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse per curabitur aptent laoreet fringilla lacus euismod placerat? Proin odio convallis taciti placerat posuere orci ornare quisque. Quis fames sit; quis sem eleifend molestie. Finibus duis justo felis cras ex montes. Bibendum praesent rutrum mollis dignissim justo tempus. Blandit maximus hendrerit per ultrices nec ac elementum. Pretium maecenas arcu hendrerit nascetur tortor porttitor parturient nascetur.';
         blogContent3.textContent = 'Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse per curabitur aptent laoreet fringilla lacus euismod placerat? Proin odio convallis taciti placerat posuere orci ornare quisque. Quis fames sit; quis sem eleifend molestie. Finibus duis justo felis cras ex montes. Bibendum praesent rutrum mollis dignissim justo tempus. Blandit maximus hendrerit per ultrices nec ac elementum. Pretium maecenas arcu hendrerit nascetur tortor porttitor parturient nascetur.';
@@ -69,7 +69,7 @@ window.onload = () => {
        blogImage2.src = '/media/blogcardimg3.jpg';
        blogAdmin.textContent = 'admin';
        blogDate.textContent = '23 July, 2024',
-       blogComments.textContent = '0',
+       blogComments.textContent = '0 Comments',
        blogContent1.textContent = 'Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse per curabitur aptent laoreet fringilla lacus euismod placerat? Proin odio convallis taciti placerat posuere orci ornare quisque. Quis fames sit; quis sem eleifend molestie. Finibus duis justo felis cras ex montes. Bibendum praesent rutrum mollis dignissim justo tempus. Blandit maximus hendrerit per ultrices nec ac elementum. Pretium maecenas arcu hendrerit nascetur tortor porttitor parturient nascetur.';
        blogContent2.textContent = 'Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse per curabitur aptent laoreet fringilla lacus euismod placerat? Proin odio convallis taciti placerat posuere orci ornare quisque. Quis fames sit; quis sem eleifend molestie. Finibus duis justo felis cras ex montes. Bibendum praesent rutrum mollis dignissim justo tempus. Blandit maximus hendrerit per ultrices nec ac elementum. Pretium maecenas arcu hendrerit nascetur tortor porttitor parturient nascetur.';
        blogContent3.textContent = 'Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse per curabitur aptent laoreet fringilla lacus euismod placerat? Proin odio convallis taciti placerat posuere orci ornare quisque. Quis fames sit; quis sem eleifend molestie. Finibus duis justo felis cras ex montes. Bibendum praesent rutrum mollis dignissim justo tempus. Blandit maximus hendrerit per ultrices nec ac elementum. Pretium maecenas arcu hendrerit nascetur tortor porttitor parturient nascetur.';
