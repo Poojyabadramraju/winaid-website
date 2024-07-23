@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Blogs</title>
+    <script defer src="/main.js"></script>
+    <script defer src="/js/script.js"></script>
+    <script defer src="/js/blogscript.js"></script>
+</head>
+<body>
+    <div id="preloader" class="flex justify-center items-center">
+        <div class="loader-container">
+            <div class="loader">
+                <div class="loader">
+                    <div class="loader">
+                        <div class="loader">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="navbar-include" class="sticky top-0 z-[1000]"></div>
+
+    <div class="flex flex-col mb-10 gap-8">
+        <!-- banner section -->
+        <section class="md:h-[75vh] h-[50vh] flex relative">
+            <img src="" alt="wildlife banner image" class="blog-banner-img w-full object-cover object-center">
+            <div class="flex flex-col absolute justify-center items-center gap-4 w-full h-full text-center text-white bg-black/30">
+                <h1 class="blog-banner-title lg:text-[60px] text-2xl md:text-4xl font-extrabold tracking-wide"></h1>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-3 max-md:grid-cols-1 items-center px-8 py-10 gap-5">
+            <div class="flex flex-col md:col-[1_/_span_2] gap-14">
+                <div class="flex flex-col gap-8">
+                    <div>
+                        <img src="" alt="" class="blog-img-1 aspect-[16/9] w-full">
+                    </div>
+                    <div class="flex items-center gap-5">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-regular fa-user text-left text-primary"></i>
+                            <p class="text-left blog-admin"></p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-regular fa-calendar text-left text-primary"></i>
+                            <p class="text-left blog-date"></p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-regular fa-comment text-left text-primary"></i>
+                            <p class="text-left blog-comments"></p>
+                        </div>
+                    </div>
+
+                    <p class="text-lg text-left blog-content-1"></p>
+                    <p class="text-lg text-left blog-content-2"></p>
+
+                    <div>
+                        <img src="" alt="" class="blog-img-2 aspect-[16/9] w-full">
+                    </div>
+
+                    <p class="text-lg text-left blog-content-3"></p>
+                    <p class="text-lg text-left blog-content-4"></p>
+                </div>
+    
+                <div class="flex flex-col gap-5">
+                    <h2 class="text-3xl font-bold text-left">Leave a comment</h2>
+                    <div class="flex justify-center items-center">
+                        <form action="" class="flex flex-col items-center w-full h-full gap-5">
+                            <div class="flex flex-wrap max-sm:flex-col justify-between items-center w-full gap-5">
+                                <div class="flex-1 p-4 max-sm:w-full border-2 border-black/10">
+                                    <label for="name" class="w-full">
+                                        <input id="name" name="name" type="text" placeholder="Name" class="placeholder:text-black outline-none w-full">
+                                    </label>
+                                </div>
+        
+                                <div class="flex-1 p-4 max-sm:w-full border-2 border-black/10">
+                                    <label for="email-address" class="w-full">
+                                        <input id="email-address" name="email-address" type="email" placeholder="Email Address" class="placeholder:text-black outline-none w-full">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="flex-grow flex justify-center items-center w-full border-2 border-black/10">
+                                <label for="message" class="w-full h-full p-4">
+                                    <textarea name="message" id="message" placeholder="Comment here" class="placeholder:text-black outline-none w-full h-full"></textarea>
+                                </label>
+                            </div>
+
+                            <div class="overlay-btn self-start">
+                                <button class="uppercase text-base relative z-[1] text-white px-6 py-4">Post comment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+
+            </div>
+        </section>
+
+    </div>
+
+    <div id="footer-include" class="mt-auto"></div>
+
+</body>
+</html>

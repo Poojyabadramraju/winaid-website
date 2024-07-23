@@ -37,9 +37,9 @@
 
 <div class="search-drop flex flex-col justify-center">
     <i class="fa-solid fa-xmark self-end text-4xl absolute top-8 right-5 text-white px-5 hover:text-[#fd6711]" id="search-close-btn"></i>
-    <div class="search-container flex justify-between items-center self-center w-10 h-[10%] relative bg-white p-4">
+    <div class="search-container flex justify-between items-center self-center w-10 h-[10%] relative bg-white px-4 py-2">
         <label for="search-bar" class="flex-1 w-full h-full">
-            <input type="search" id="search-bar" name="search-bar" placeholder="Search here" class="placeholder:text-black outline-none p-2 w-full h-full focus-within:">
+            <input type="search" id="search-bar" name="search-bar" placeholder="Search here" class="placeholder:text-black outline-none pr-2 w-full h-full focus-within:">
         </label>
         <i class="search-bar-icon fa-solid fa-magnifying-glass text-2xl font-extrabold invisible hover:text-[#fd6711]"></i>
     </div>
@@ -132,6 +132,13 @@
             display: none;
         }
     }
+
+    @media (max-width:768px){
+        .search-drop .search-container.search-pop{
+            width: 75%;
+        }
+    }
+
 </style>
 
 <script>

@@ -90,12 +90,6 @@ body{
     width: 100%;
     height: 100vh;
     z-index: 100001;
-    /* background: url('/media/preloader-gif.svg');
-    background-color: #ffffff;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url('/media/preloader-gif.svg');
-    background-size: 120px; */
 }
 
 #preloader .loader-container{
@@ -123,6 +117,8 @@ body{
         transform: rotate(360deg);
     }
 }
+
+/* overlay btn */
 
 .overlay-btn{
     display: flex;
@@ -175,12 +171,17 @@ body{
     transition: left .5s ease;
 }
 
+/* overlay highlight animation */
+.overlay-highlyt-anime-img{
+    position: relative;
+    overflow: hidden;
+}
+
 .overlay-highlyt-anime-img img{
     z-index: 0;
     transition: transform 300ms ease-in-out;
 }
 
-/* overlay highlight animation */
 .overlay-highlyt-anime{
     position: absolute;
     z-index: 1;
@@ -285,43 +286,33 @@ body{
 }
 
 /* about page css */
-.about-donate-btn::after{
-    position: absolute;
-    content: "";
-    background-color: black;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transform:translateY(100%);
-    transition: transform 500ms ease-in-out;
-}
-
-.about-donate-btn:hover::after{
-    transform: translateY(0);
-}
 
 /* contact-page-css */
 
-.contact-form .contact-message-btn::after{
-    position: absolute;
-    content: "";
-    background-color: black;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transform:translateY(100%);
-    transition: transform 500ms ease-in-out;
+/* project subpage css */
+.donar-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 56px;
+    gap: 5px;
+    border-radius: 8px;
+    background-color: #f9f2ed;
 }
 
-.contact-form .contact-message-btn:hover::after{
-    transform: translateY(0);
+.donar-card img{
+    width: full;
+    height: full;
+    border-radius: 9999px;
 }
 
+.donar-card .donar-name, .donar-card .donar-amount{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.donar-card .donar-date{
+    color: rgb(0,0,0,0.4);
+}

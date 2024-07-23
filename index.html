@@ -74,12 +74,14 @@
         <!-- projects section -->
         <section class="flex flex-col bg-three px-6 md:px-12 py-8 gap-10 mt-5">
             <h2 class="text-center uppercase font-semibold text-primary"> On Going Projects</h2>
-            <div class="flex flex-wrap justify-center items-center content-center lg:gap-8 gap-6">
-                <div class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
-                    <div class="overlay-highlyt-anime-img relative flex-1 overflow-hidden">
-                        <img src="/media/projectscardimg1.jpg" alt="wildlife project card image" class="aspect-square w-full rounded-t-lg">
-                        <div class="overlay-highlyt-anime"></div>
-                    </div>
+            <div class="proj-cards flex flex-wrap justify-center items-center content-center lg:gap-8 gap-6">
+                <div id="wildlife-awareness-campaign" class="proj-card-1 overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <a href="" class="flex-1">
+                        <div class="overlay-highlyt-anime-img">
+                            <img src="/media/projectscardimg1.jpg" alt="wildlife project card image" class="aspect-square w-full rounded-t-lg ">
+                            <div class="overlay-highlyt-anime "></div>
+                        </div>
+                    </a>
                     <div class="flex-1 flex flex-col justify-center items-start text-left px-6 py-8 gap-4">
                         <h3 class="text-left text-xl font-semibold text-primary-hover">Wildlife Awareness Campaign</h3>
                         <div class="text-base round-lg bg-three px-4 py-6">
@@ -101,11 +103,13 @@
                     </div>
                 </div>
 
-                <div class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
-                    <div class="overlay-highlyt-anime-img relative flex-1 overflow-hidden">
-                        <img src="/media/projectscardimg2.jpg" alt="wildlife project card image" class="z-0 aspect-square w-full rounded-t-lg ">
-                        <div class="overlay-highlyt-anime z-[1]"></div>
-                    </div>
+                <div id="marine-conservation-efforts" class="proj-card-2 overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <a href="" class="flex-1">
+                        <div class="overlay-highlyt-anime-img">
+                            <img src="/media/projectscardimg2.jpg" alt="wildlife project card image" class="aspect-square w-full rounded-t-lg ">
+                            <div class="overlay-highlyt-anime"></div>
+                        </div>
+                    </a>
                     <div class="flex-1 flex flex-col justify-center items-start text-left px-6 py-8 gap-4">
                         <h3 class="text-left text-xl font-semibold text-primary-hover">Marine Conservation Efforts</h3>
                         <div class="text-base round-lg bg-[#fdf4ed] px-4 py-6">
@@ -127,11 +131,13 @@
                     </div>
                 </div>
 
-                <div class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
-                    <div class="overlay-highlyt-anime-img relative flex-1 overflow-hidden">
-                        <img src="/media/projectscardimg3.jpg" alt="wildlife project card image" class="z-0 aspect-square w-full rounded-t-lg ">
-                        <div class="overlay-highlyt-anime z-[1]"></div>
-                    </div>
+                <div id="forest-restoration-project" class="proj-card-3 overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <a href="" class="flex-1">
+                        <div class="overlay-highlyt-anime-img">
+                            <img src="/media/projectscardimg3.jpg" alt="wildlife project card image" class="aspect-square w-full rounded-t-lg ">
+                            <div class="overlay-highlyt-anime"></div>
+                        </div>
+                    </a>
                     <div class="flex-1 flex flex-col justify-center items-start text-left px-6 py-8 gap-4">
                         <h3 class="text-left text-xl font-semibold text-primary-hover">Forest Restoration Project</h3>
                         <div class="text-base round-lg bg-[#fdf4ed] px-4 py-6">
@@ -283,10 +289,10 @@
                 </div> -->
             </div>
 
-            <div class="flex flex-wrap md:justify-between justify-center items-center content-center lg:gap-8 gap-6">
-                <div class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
-                    <div class="flex-1 overlay-highlyt-anime-img relative overflow-hidden">
-                        <img src="/media/blogimg1.jpg" alt="team 1 card image" class="aspect-[3/2] w-full rounded-t-lg ">
+            <div class="blog-cards flex flex-wrap md:justify-between justify-center items-center content-center lg:gap-8 gap-6">
+                <div id="saving-the-rainforests" class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="flex-1 overlay-highlyt-anime-img">
+                        <img src="/media/blogcardimg1.jpg" alt="team 1 card image" class="aspect-[3/2] w-full rounded-t-lg ">
                         <div class="overlay-highlyt-anime"></div>
                     </div>
                     <div class="flex-1 flex flex-col justify-center text-left px-6 py-8 gap-4">
@@ -302,15 +308,15 @@
                             </div>
                         </div>
                         <p>Exploring initiatives to protect and restore the world's rainforests</p>
-                        <div class="flex justify-center items-center overlay-btn self-start relative overflow-hidden rounded-full bg-secondary transition-transform duration-[300ms] ease-in-out hover:scale-105 active:scale-95">
-                            <a href="/pages/donate.html"><button class="text-xl relative z-[1] text-white px-6 py-2 ">Read more</button></a>
+                        <div class="overlay-btn self-start">
+                            <a href="" ><button class="text-xl relative z-[1] text-white px-6 py-2 ">Read more</button></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
-                    <div class="flex-1 overlay-highlyt-anime-img relative overflow-hidden">
-                        <img src="/media/blogimg2.jpg" alt="team 1 card image" class="aspect-[3/2] w-full rounded-t-lg ">
+                <div id="eco-friendly-travel-tips" class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="flex-1 overlay-highlyt-anime-img">
+                        <img src="/media/blogcardimg2.jpg" alt="team 1 card image" class="aspect-[3/2] w-full rounded-t-lg ">
                         <div class="overlay-highlyt-anime"></div>
                     </div>
                     <div class="flex-1 flex flex-col justify-center text-left px-6 py-8 gap-4">
@@ -326,15 +332,15 @@
                             </div>
                         </div>
                         <p>How to enjoy nature responsibly and support wildlife conservation while travelling</p>
-                        <div class="flex justify-center items-center overlay-btn self-start relative overflow-hidden rounded-full bg-secondary transition-transform duration-[300ms] ease-in-out hover:scale-105 active:scale-95">
-                            <a href="/pages/donate.html"><button class="text-xl relative z-[1] text-white px-6 py-2 ">Read more</button></a>
+                        <div class="overlay-btn self-start">
+                            <a href=""><button class="text-xl relative z-[1] text-white px-6 py-2 ">Read more</button></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
-                    <div class="flex-1 overlay-highlyt-anime-img relative overflow-hidden">
-                        <img src="/media/blogimg3.jpg" alt="team 1 card image" class="aspect-[3/2] w-full rounded-t-lg ">
+                <div id="the-role-of-national-parks" class="overlay-highlyt-anime-card flex flex-col overflow-hidden min-w-[150px] w-[350px] bg-white shadow-primary rounded-lg shadow-secondary-hover cursor-pointer">
+                    <div class="flex-1 overlay-highlyt-anime-img">
+                        <img src="/media/blogcardimg3.jpg" alt="team 1 card image" class="aspect-[3/2] w-full rounded-t-lg ">
                         <div class="overlay-highlyt-anime"></div>
                     </div>
                     <div class="flex-1 flex flex-col justify-center text-left px-6 py-8 gap-4">
@@ -350,8 +356,8 @@
                             </div>
                         </div>
                         <p>Exploring how national parks conserve wildlife and natural habitats</p>
-                        <div class="flex justify-center items-center overlay-btn self-start relative overflow-hidden rounded-full bg-secondary transition-transform duration-[300ms] ease-in-out hover:scale-105 active:scale-95">
-                            <a href="/pages/donate.html"><button class="text-xl relative z-[1] text-white px-6 py-2 ">Read more</button></a>
+                        <div class="overlay-btn self-start">
+                            <a href=""><button class="text-xl relative z-[1] text-white px-6 py-2 ">Read more</button></a>
                         </div>
                     </div>
                 </div>
